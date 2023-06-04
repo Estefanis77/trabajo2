@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const MainContact = () => {
   const [name, setName] = useState('');
@@ -17,35 +17,40 @@ const MainContact = () => {
 
   return (
     <div className="main-contact-container">
-      <h2>Formulario de Contacto</h2>
+      <h2 className="title">Formulario de Contacto</h2>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Nombre:</label>
+        <div className="form-group">
+          <label htmlFor="name" className="label">Nombre:</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            className="input"
           />
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
+        <div className="form-group">
+          <label htmlFor="email" className="label">Email:</label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="input"
           />
         </div>
-        <div>
-          <label htmlFor="message">Mensaje:</label>
+        <div className="form-group">
+          <label htmlFor="message" className="label">Mensaje:</label>
           <textarea
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            className="textarea"
           ></textarea>
         </div>
-        <button type="submit">Enviar</button>
+        <div className="button-container">
+  <button type="submit" className="button">Enviar</button>
+</div>
       </form>
     </div>
   );

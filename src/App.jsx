@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import Home from './pages/Home.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './pages/Contact.jsx';

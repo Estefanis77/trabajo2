@@ -1,4 +1,4 @@
-import React from 'react';
+//import React from 'react';
 import Footer from '../components/Home/Footer';
 import Header from '../components/Home/Header';
 import Main from '../components/Home/Main';
@@ -6,11 +6,11 @@ import Main from '../components/Home/Main';
 
 const Home = () => {
   const alumno = {
-    nombre: 'Alvaro Albornoz',
-    edad: '27',
-    legajo: '55573',
+    nombre: 'Estefanis Rodriguez',
+    edad: '29',
+    legajo: '49038',
     numTel: '0303456',
-    deporteFavorito: 'Rugby',
+    deporteFavorito: 'Gimnasio',
   };
 
   return (
